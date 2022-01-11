@@ -1,0 +1,25 @@
+/* 슬라이드 */
+.container{
+    width: 1200px;
+    margin: auto;
+    text-decoration: none;
+}
+#mainBanner{
+    overflow: hidden;
+    height: 350px;
+}
+#mainBanner ul{
+    
+    
+}
+#mainBanner li{
+  
+}
+#mainBanner li a{
+    display: block;
+    
+}
+#mainBanner li img{
+    display: block;
+
+}
