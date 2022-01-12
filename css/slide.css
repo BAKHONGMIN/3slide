@@ -1,25 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
 /* 슬라이드 */
 .container{
     width: 1200px;
-    margin: auto;
-    text-decoration: none;
+    margin: 0 auto;
 }
-#mainBanner{
+#topBanner{
     overflow: hidden;
     height: 350px;
 }
-#mainBanner ul{
-    
-    
+p{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 1em;
 }
-#mainBanner li{
-  
+/*               /////////////////////////////////// */
+#slideBanner{
+    overflow: hidden;
+    height: 350px;
 }
-#mainBanner li a{
+#slideBanner ul{
+    display: flex;
+    width: 100000px;
+}
+#slideBanner li a{
     display: block;
-    
 }
-#mainBanner li img{
+#slideBanner li img{
     display: block;
+}
+/* //////////////////////////////////// */
+#fadeBanner{
+    overflow: hidden;
+    width: 1200px;
+    height: 350px;
+}
+li img, li a{
+    display: block;
+}
+#fadeBanner{
+    position: relative;
 
+}
+#fadeBanner li{
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: 0.6s;
+    visibility: hidden;
+}
+/* class li.on이 z축으로 1번으로 오겠다, position이 존재해야한다 */
+#fadeBanner li.on{
+    z-index: 1;
+    opacity: 1;
+    visibility: visible;
 }
