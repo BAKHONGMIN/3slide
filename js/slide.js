@@ -34,3 +34,4 @@ $(document).ready(function(){
         objfade.find('li').eq(count).addClass('on').siblings().removeClass('on');
     },3000);
 });
+////////////////////페이드
